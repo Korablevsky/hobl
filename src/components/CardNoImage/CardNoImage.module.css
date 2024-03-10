@@ -1,0 +1,68 @@
+.container {
+	padding: 30px 40px;
+	max-width: 630px;
+
+	border-radius: 20px;
+	box-shadow: 0px 0px 25px 0px rgba(142, 160, 173, 0.35);
+	background: linear-gradient(
+		90deg,
+		rgb(251, 253, 255),
+		rgb(216, 239, 255) 100.863%
+	);
+
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+@media screen and (max-width: 1300px) {
+	.container {
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 1060px) {
+	.container {
+		font-size: 16px;
+		max-width: 400px;
+		gap: 15px;
+	}
+}
+
+@media screen and (max-width: 969px) {
+	.container {
+		font-size: 14px;
+		padding: 20px 30px;
+		max-width: 350px;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.container {
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 560px) {
+	.container{
+		font-size: 12px;
+		padding: 10px 20px;
+		border-radius: 10px;
+	}
+}
+@media screen and (max-width: 450px) {
+	.card {
+	}
+	.card_title {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 380px) {
+	.card {
+		max-width: 270px;
+	}
+	.card_title {
+		font-size: 16px;
+	}
+	.card_text {
+		font-size: 12px;
+	}
+}

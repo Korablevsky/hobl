@@ -1,0 +1,158 @@
+.text_bold {
+	margin-bottom: 10px;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.4;
+	letter-spacing: 0%;
+}
+.sup {
+	vertical-align: super;
+	font-size: 16px;
+}
+
+.text {
+	margin-bottom: 40px;
+
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+.title {
+	margin-bottom: 40px;
+
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 41px;
+	letter-spacing: 0%;
+	text-align: center;
+}
+.card__box {
+	display: flex;
+	justify-content: space-between;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 12px;
+	max-width: 365px;
+
+	border-radius: 20px;
+	background: rgba(253, 217, 102, 0.25);
+}
+.image {
+	margin: 0 auto;
+}
+.card__number {
+	font-size: 96px;
+	font-weight: 700;
+	line-height: 1.3;
+	text-align: center;
+}
+.card__text {
+	margin-bottom: 15px;
+
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 1.3em;
+	letter-spacing: 0%;
+	text-align: center;
+}
+.bold {
+	font-weight: 700;
+}
+.card__small {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.3;
+	letter-spacing: 0%;
+	text-align: center;
+}
+
+@media screen and (max-width: 1220px) {
+	.card__number {
+		font-size: 80px;
+	}
+	.card {
+		max-width: 300px;
+	}
+	.card__text {
+		font-size: 22px;
+	}
+}
+
+@media screen and (max-width: 1030px) {
+	.card__number {
+		font-size: 60px;
+	}
+	.card__box {
+		flex-wrap: wrap;
+		gap: 20px;
+		justify-content: center;
+
+	}
+	.card {
+		max-width: 400px;
+	}
+	.card__text {
+		font-size: 22px;
+	}
+}
+@media screen and (max-width: 932px) {
+	.card {
+		max-width: 300px;
+	}
+}
+@media screen and (max-width: 765px) {
+	.card {
+		max-width: 230px;
+	}
+	.card__number {
+		font-size: 50px;
+	}
+	.card__text {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	.card__small{
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.text_bold{
+		font-size: 18px;
+	}
+	.text{
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	.sup{
+		font-size: 12px;
+	}
+	.title{
+		font-size: 22px;
+		margin-bottom: 10px;
+	}
+}
+@media screen and (max-width: 530px) {
+	.text_bold, .text{
+		font-size: 12px;
+	}
+	.sup{
+		font-size: 8px;
+	}
+	.card {
+		max-width: 200px;
+		padding: 15px 10px;
+	}
+	.image{
+		width: auto;
+		height: auto;
+	}
+	.card__number{font-size: 35px;}
+	.card__text , .card__small{font-size: 12px;}
+	.title{
+		font-size: 18px;
+	}
+}

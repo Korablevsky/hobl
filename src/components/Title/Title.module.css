@@ -1,0 +1,31 @@
+.text {
+	background-image: url('Title_BG.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	padding: 18px 0 37px 0;
+	margin-bottom: 40px;
+
+	color: rgb(1, 69, 122);
+	font-family: Century Gothic;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.4;
+}
+@media screen and (max-width: 1000px) {
+	.text{
+		margin-bottom: 5px;
+	}
+}
+@media screen and (max-width: 800px) {
+	.text{
+		padding: 10px 0 17px 0;
+		font-size: 30px;
+	}
+}
+@media screen and (max-width: 460px) {
+	.text{
+		padding: 10px 0 17px 0;
+		font-size: 22px;
+	}
+}

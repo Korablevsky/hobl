@@ -1,0 +1,100 @@
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin: 40px 0;
+	padding: 40px;
+
+	border: 1px solid rgb(1, 69, 122);
+	border-radius: 20px;
+	box-shadow: 0px 0px 25px 0px rgba(142, 160, 173, 0.35);
+
+	cursor: pointer;
+}
+.text {
+	background-image: url('Accordeon_BG.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	margin: 0 30px;
+	padding: 6px 47px 9px 0;
+
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.4;
+}
+.span {
+	font-weight: 700;
+}
+
+.accordeon {
+	/* Стили для скрытого содержимого аккордеона */
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.4;
+
+	max-height: 100px;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+}
+.horizontal_shadow {
+	-webkit-mask-image: linear-gradient(
+		to top,
+		transparent,
+		black 20%,
+		transparent
+	);
+	mask-image: linear-gradient(
+		to top,
+		transparent,
+		black 80%,
+		black 100%,
+		transparent
+	);
+}
+
+.open {
+	/* Стили для открытого содержимого аккордеона */
+	max-height: 1900px;
+}
+.hidden {
+	display: none;
+}
+
+@media screen and (max-width: 745px) {
+	.box{
+		padding: 20px;
+		margin: 15px;
+
+	}
+	.image {
+		display: none;
+	}
+}
+@media screen and (max-width: 600px) {
+	.box{
+		padding: 10px;
+	}
+	.text, .accordeon{
+		font-size: 16px;
+	}
+	
+}
+@media screen and (max-width: 430px) {
+	.text, .accordeon{
+		font-size: 14px;
+	}
+	.box{
+		margin: 15px 0;
+		padding: 5px;
+	}
+	.text{
+		margin: 0 10px;
+	}
+}
+@media screen and (max-width: 376px) {
+	.text, .accordeon{
+		font-size: 12px;
+	}
+}
